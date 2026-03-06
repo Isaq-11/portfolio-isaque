@@ -1,0 +1,36 @@
+body{
+    background: lightblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    align-items: first baseline;
+}
+
+
+.titulo{
+    font-family: 'Times New Roman';
+    background-color: beige;
+    display: flex;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+    align-items: first baseline;
+}
+
+.testeCSS{
+    font-family: "Times New Roman";
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+}
