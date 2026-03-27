@@ -1,43 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap');
+
+:root{
+    --transparent-color: #49111c00;
+
+    --black-color-pallete1: #0A0908;
+    --burgundy-color-pallete1: #49111c;
+    --white-color-pallete1: #f2f4f3;
+    --taupe-color-pallete1: #A9927D;
+    --brown-color-pallete1: #5E503F;
+
+    --white-color-pallete2: #FDFFFF;
+    --red-color-pallete2: #B10F2E;
+    --cherry-color-pallete2: #570000;
+    --mogno-color-pallete2: #280000;
+    --peach-color-pallete2: #DE7C5A;
+
+    --blue-color-pallete3: #001427;
+    --teal-color-pallete3: #708D81;
+    --jasmine-color-pallete3: #f4d58d;
+    --ember-color-pallete3: #BF0603;
+    --red-color-pallete3: #8D0801;
+
+    --special-gothic-font: "Special Gothic Condensed One", sans-serif;
+}
+
+
 *,*::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* body{
-    background: lightblue;
+body{
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-  /*  margin: 0;
+    background-color: var(--taupe-color-pallete1);
+    
 }
+
 
 header{
+    font-family: var(--special-gothic-font);
+    font-size: clamp(0.8vw, 1.2vw, 1.7vw);
+    font-weight: 300;
+    /* background: linear-gradient(var(--burgundy-color-pallete1) 85%, var(--transparent-color)); */
+    background-color: var(--brown-color-pallete1);
+    padding: 20px 10px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: first baseline;
-    align-items: first baseline;
+    justify-items: center; 
+    align-items: center;   
 }
 
 
-.titulo{
-    font-family: 'Times New Roman';
-    background-color: beige;
+.navbar{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 0;
-    align-items: first baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.testeCSS{
-    font-family: "Times New Roman";
-    background-color: bisque;
+.navbar ul{
     display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 0;
-} */
+    list-style: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: var(--white-color-pallete1);
+}
+.navbar-links li{
+    padding: 0 5px;
+}
