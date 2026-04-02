@@ -33,17 +33,16 @@
 
 body{
     min-height: 100vh;
-    background-color: var(--taupe-color-pallete1);
-    
+    line-height: 1.6;
+    font-family: var(--special-gothic-font);
 }
 
 
 header{
-    font-family: var(--special-gothic-font);
-    font-size: clamp(0.8vw, 1.2vw, 1.7vw);
+    font-size: clamp(1rem, 1.5rem);
     font-weight: 300;
     /* background: linear-gradient(var(--burgundy-color-pallete1) 85%, var(--transparent-color)); */
-    background-color: var(--brown-color-pallete1);
+    background-color: var(--burgundy-color-pallete1);
     padding: 20px 10px;
     width: 100%;
     display: flex;
@@ -71,4 +70,54 @@ header{
 }
 .navbar-links li{
     padding: 0 5px;
+}
+
+
+.hero-page{
+    /* background: linear-gradient(90deg, #0058fc, #003dc0, #00177c); */
+    color: var(--white-color-pallete1);
+    background: var(--blue-color-pallete3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hero-content{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hero-welcome h1{
+    font-size: clamp(1rem, 5rem, 7rem);
+}
+.hero-suggestion{
+    padding: 0 10px;
+}
+
+
+
+
+
+
+.about-page{
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: var(--burgundy-color-pallete1);
+}
+.skills-page{
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: var(--white-color-pallete1);
+}
+.projects-page{
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: var(--black-color-pallete1);
+}
+.contact-page{
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: var(--white-color-pallete1);
 }
