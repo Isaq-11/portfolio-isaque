@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap');
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap');
 
 :root{
     --transparent-color: #49111c00;
@@ -41,7 +49,6 @@ body{
 header{
     font-size: clamp(1rem, 1.5rem);
     font-weight: 300;
-    /* background: linear-gradient(var(--burgundy-color-pallete1) 85%, var(--transparent-color)); */
     background-color: var(--burgundy-color-pallete1);
     padding: 20px 10px;
     width: 100%;
@@ -74,7 +81,7 @@ header{
 
 
 .hero-page{
-    /* background: linear-gradient(90deg, #0058fc, #003dc0, #00177c); */
+    
     color: var(--white-color-pallete1);
     background: var(--blue-color-pallete3);
     display: flex;
@@ -120,4 +127,4 @@ header{
     margin: 0 auto;
     max-width: 1280px;
     background-color: var(--white-color-pallete1);
-}
+} */
