@@ -77,10 +77,11 @@ main{
 
 .home-container{
     max-width: 1200px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-items: center;
 
 }
 
@@ -126,8 +127,16 @@ main{
 }
 
 .about-container{
+    max-width: 1200px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.about-name{
+    margin-right: auto;
 }
 
 .about-name h1{
@@ -137,7 +146,7 @@ main{
 }
 
 .about-info h1{
-    font-size: clamp(1rem, 2rem, 3rem);
+    font-size: clamp(0.8rem, 2rem, 3rem);
     margin: 12px 0;
 }
 
@@ -150,6 +159,88 @@ main{
     padding: 6px 0;
 }
 
+.educational-information{
+    margin: 6px 0;
+}
+
+.professional-information{
+    margin: 6px 0;
+}
+
+
+/* CSS DA PAGINA HABILIDADES */
+.skills-page{
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+
+    background-color: aqua;
+}
+
+.skills-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-name{
+    margin-right: auto;
+}
+
+.skills-name h1{
+    margin: 16px 0;
+    font-size: clamp(1rem, 2.5rem, 4rem);
+    font-weight: bold;
+}
+
+.skills-info{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.skills-info li{
+    list-style: none;
+}
+
+.skills-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills-card-name{
+    text-align: left;
+}
+
+.skills-card-name h1{
+    margin: 12px 0;
+}
+
+.skills-card-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: space-around;
+}
+
+.skills-card-content li{
+   padding: 8px;
+   width: fit-content;
+   white-space: nowrap;
+}
+
+.skills-card-content li img{
+   height: 30px;
+   width: 30px;
+   width: fit-content;
+   
+}
 
 
 
