@@ -16,8 +16,17 @@ header{
 section{
     min-height: 100vh;
     width: 100%;
+    scroll-snap-align: start;
 }
 
+main{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+
+/* CSS DO HEADER NAVBAR */
 .navbar{
     max-width: 1200px;
     width: 100%;
@@ -56,11 +65,14 @@ section{
 }
 
 
+/* CSS DA PAGINA INICIAL */
 .home-page{
     display: flex;
     align-items: center;
     justify-items: center;
     padding: 0 16px;
+
+    background-color: aqua;
 }
 
 .home-container{
@@ -100,8 +112,42 @@ section{
 .inicial-description button{
     font-size: clamp(0.8rem, 1.2rem, 1.5rem);
     width: 100%;
+    border-radius: 12px;
     margin: 12px 0;
     padding: 6px;
+}
+
+
+/* CSS DA PAGINA 'SOBRE' */
+.about-page{
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-name h1{
+    margin: 16px 0;
+    font-size: clamp(1rem, 2.5rem, 4rem);
+    font-weight: bold;
+}
+
+.about-info h1{
+    font-size: clamp(1rem, 2rem, 3rem);
+    margin: 12px 0;
+}
+
+.about-info li{
+    list-style: none;
+}
+
+.about-info h2{
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    padding: 6px 0;
 }
 
 
