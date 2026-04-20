@@ -1,7 +1,7 @@
 :root{
     /* DENIFIR AQUI VARIAVEIS GLOBAIS */
     --navbar-icons-size: clamp(20px, 8vw, 30px);
-    --icons-size: clamp(20px, 8vw, 30px);
+    --icons-size: clamp(20px, 5vw, 30px);
     --home-image-size: clamp(150px, 35vw, 450px);
     --home-p-size: clamp(0.7rem, 4vw, 2rem);
     --h1-size: clamp(1.5rem, 8.5vw, 4rem);
@@ -157,8 +157,10 @@ main{
 .home-button{
     background-color: burlywood;
 
+    width: 100%;
+
     margin: 12px 0;
-    padding: 8px;
+    padding: 10px;
     
     text-align: center;
 
@@ -167,6 +169,13 @@ main{
 
 .home-button a{
 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    font-size: var(--p-size);
+
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -257,7 +266,7 @@ main{
     flex-direction: row;
     align-items: flex-start;
 
-    margin: 6px 0;
+    margin: 12px 0;
 
     flex-wrap: wrap;
     justify-content: space-around;
@@ -332,7 +341,107 @@ main{
     object-fit: cover;
 }
 
+.projects-card{
+    margin: 12px 0;
+}
 
+.projects-card-tools{
+    margin: 12px 0;
+}
+
+
+/* CSS DA PAGINA 'CONTATO' */
+.contact-page{
+    background-color: aqua;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+
+    margin: 24px 0;
+
+    /* gap: 36px; */
+}
+
+.contact-name{
+    margin: var(--h2-margin-size) 0;
+}
+
+.contact-page h2{
+    font-size: var(--h2-size);
+
+    font-weight: bold;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+
+    margin: 16px 0;
+}
+
+.contact-form fieldset{
+    border: 2px solid #000;
+    border-radius: 12px;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form legend{
+    font-size: var(--h3-size);
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.contact-form label{
+    font-size: var(--p-size);
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 8px;
+
+    font-size: var(--p-size);
+
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border: 1px solid #000;
+}
+
+.form-name,
+.form-email,
+.form-message{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-form button{
+    margin-top: 12px;
+    padding: 10px;
+
+    font-size: var(--p-size);
+    font-weight: bold;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: burlywood;
+    cursor: pointer;
+}
 
 
 
