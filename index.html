@@ -18,7 +18,7 @@
                 <div class="navbar-home-link">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="#homeSection">
                                 <span class="icon-label">INÍCIO</span>
                                 <img src="assets/icons/home.svg" alt="Início">
                             </a>
@@ -28,25 +28,25 @@
                 <div class="navbar-links">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="#aboutSection">
                                 <span class="icon-label">SOBRE</span>
                                 <img src="assets/icons/user-circle.svg" alt="Sobre">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#skillsSection">
                                 <span class="icon-label">HABILIDADES</span>
                                 <img src="assets/icons/bolt.svg" alt="Habilidades">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#projectsSection">
                                 <span class="icon-label">PROJETOS</span>
                                 <img src="assets/icons/folder.svg" alt="Projetos">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#contactSection">
                                 <span class="icon-label">CONTATO</span>
                                 <img src="assets/icons/envelope.svg" alt="Contato">
                             </a>
@@ -60,62 +60,68 @@
 
     <main>
 
-        <section class="home-page">
-            <article class="home-container">
+        <section id="homeSection" class="home-page">
+            <article class="section-container">
             
-                <div class="section-info">
+                <div class="home-info">
 
-                    <div class="inicial-image">
-                        <h1>foto aqui</h1>
+                    <div class="home-image">
+                        <img src="assets/images/corinthians wpp.jpg" alt="Foto Inicial">
                     </div>
 
-                    <div class="info-name">
+                    <div class="home-presentation">
                         <h1>Isaque Xavier</h1>
+                        <p>Estudante de Engenharia de Software e um apaixonado por filmes</p>
                     </div>
 
-                    <div class="inicial-description">
-                        <h1>Estudante de Engenharia de Software e um apaixonado por filmes</h1>
-                        <button class="know-me-button">Conheça-me >> </button>
+                    <div class="home-button">
+                        <a href="#aboutSection">Conheça-me >></a>
                     </div>
 
                 </div>
             </article>
         </section>
 
-        <section class="about-page">
+        <section id="aboutSection" class="about-page">
             <article class="about-container">
-                <div class="about-name">
-                    <h1>Sobre</h1>
-                </div>
+                <header class="about-name">
+                    <h2>Sobre</h2>
+                </header>
 
                 <div class="about-info">
 
                     <div class="educational-information">
-                        <h1>Formação Acadêmica</h1>
+                        <header>
+                            <h3>Formação Acadêmica</h3>
+                        </header>
+                        
                         <ul>
                             <li>
-                                <h2>Ensino Fundamental e Médio: Concluídos no Colégio Estadual Olavo Bilac, em Amaporã/PR.</h2>
+                                <p>Ensino Fundamental e Médio: Concluídos no Colégio Estadual Olavo Bilac, em Amaporã/PR.</p>
                             </li>
                             <li>
-                                <h2>Ensino Superior: Cursando o 3° ano de Engenharia de Software, no Instituto Federal de Paranavaí.</h2>
+                                <p>Ensino Superior: Cursando o 3° ano de Engenharia de Software, no Instituto Federal de Paranavaí.</p>
                             </li>
                         </ul>
                     </div>
 
                     <div class="professional-information">
-                        <h1>Experiências Profissionais</h1>
+                        <header>
+                            <h3>Experiências Profissionais</h3>
+                        </header>
+                        
                         <ul>
                             <li>
-                                <h2>2019 - 2023: Operador de diversas máquinas de costura em uma cooperativa de produção do ramo têxtil.</h2>
+                                <p>2019 - 2023: Operador de diversas máquinas de costura em uma cooperativa de produção do ramo têxtil.</p>
                             </li>
                             <li>
-                                <h2>2024: Estagiário remunerado do setor municipal de contabilidade, em Amaporã/PR.</h2>
+                                <p>2024: Estagiário remunerado do setor municipal de contabilidade, em Amaporã/PR.</p>
                             </li>
                             <li>
-                                <h2>2024 - 2025: Assistente administrativo terceirizado no Colégio Estadual Olavo Bilac, em Amaporã/PR.</h2>
+                                <p>2024 - 2025: Assistente administrativo terceirizado no Colégio Estadual Olavo Bilac, em Amaporã/PR.</p>
                             </li>
                             <li>
-                                <h2>2025 - presente: Agente administrativo efetivado através de concurso público, em Planaltina do Paraná.</h2>
+                                <p>2025 - presente: Agente administrativo efetivado através de concurso público, em Planaltina do Paraná.</p>
                             </li>
                         </ul>
                     </div>
@@ -125,20 +131,20 @@
             </article>
         </section>
 
-        <section class="skills-page">
+        <section id="skillsSection" class="skills-page">
 
             <article class="skills-container">
 
-                <div class="skills-name">
-                    <h1>Habilidades</h1>
-                </div>
+                <header class="skills-name">
+                    <h2>Habilidades</h2>
+                </header>
 
                 <div class="skills-info">
 
                     <div class="skills-card">
-                        <div class="skills-card-name">
-                            <h1>Linguagens de Programação</h1>
-                        </div>
+                        <header class="skills-card-name">
+                            <h3>Linguagens de Programação</h3>
+                        </header>
                         <div class="skills-card-content">
                             <ul>
                                 <li>
@@ -172,9 +178,9 @@
                     </div>
 
                     <div class="skills-card">
-                        <div class="skills-card-name">
-                            <h1>Frameworks</h1>
-                        </div>
+                        <header class="skills-card-name">
+                            <h3>Frameworks</h3>
+                        </header>
                         <div class="skills-card-content">
                             <ul>
                                 <li>
@@ -193,9 +199,9 @@
                     </div>
 
                     <div class="skills-card">
-                        <div class="skills-card-name">
-                            <h1>Banco de Dados</h1>
-                        </div>
+                        <header class="skills-card-name">
+                            <h3>Bancos de Dados</h3>
+                        </header>
                         <div class="skills-card-content">
                             <ul>
                                 <li>
@@ -214,9 +220,9 @@
                     </div>
 
                     <div class="skills-card">
-                        <div class="skills-card-name">
-                            <h1>Extras</h1>
-                        </div>
+                        <header class="skills-card-name">
+                            <h3>Extras</h3>
+                        </header>
                         <div class="skills-card-content">
                             <ul>
                                 <li>
@@ -234,6 +240,16 @@
                                     <img src="assets/icons/figma.svg" alt="Figma">
                     
                                 </li>
+                                <li>
+                                    <span class="icon-label">HTML</span>
+                                    <img src="assets/icons/html.svg" alt="HTML">
+                    
+                                </li>
+                                <li>
+                                    <span class="icon-label">CSS</span>
+                                    <img src="assets/icons/css.svg" alt="CSS">
+                    
+                                </li>
                             </ul>
                         </div>
                         
@@ -244,28 +260,60 @@
             </article>
         </section>
 
-        <section class="projects-page">
+        <section id="projectsSection" class="projects-page">
             <article class="projects-container">
-                <div class="section-name">
+                <header class="projects-name">
+                    <h2>Projetos</h2>
+                </header>
 
-                </div>
+                <div class="projects-info">
 
-                <div class="section info">
-
-                    <div class="projects">
-                        <h1>projetinhoxxx</h1>
+                    <div class="projects-card">
+                        <header class="projects-card-name">
+                            <h3>JOGO DA MEMÓRIA</h3>
+                        </header>
+                        <div class="projects-card-description">
+                            <p>Coloca à prova a memória do jogdor: este jogo embaralha pares de palavras e as esconde em cartões, as quais o jogador deve selecionar corretamente um par por vez até que todos os pares estejam visíveis. O jogo permite várias tentativas por jogador e mostra o ranking das melhores pontuações.</p>
+                        </div>
+                        <div class="projects-card-tools">
+                            <p>
+                                Ferramentas Utilizadas: 
+                                HTML 
+                                <span><img src="assets/icons/html.svg" alt="HTML"></span>
+                                , CSS 
+                                <span><img src="assets/icons/css.svg" alt="CSS"></span>
+                                e JAVASCRIPT
+                                <span><img src="assets/icons/javascript.svg" alt="JAVASCRIPT"></span>
+                            </p>                            
+                        </div>
                     </div>
 
-                    <div class="projects">
-                        <h1>projetinhoxxx</h1>
+                    <div class="projects-card">
+                        <header class="projects-card-name">
+                            <h3>PROCESSADOR MONOCICLO</h3>
+                        </header>
+                        <div class="projects-card-description">
+                            <p>Busca e executa instruções: capaz de somar, subtrair, dividir e multiplicar, além de ser capaz de salvar, ler e carregar os dados do banco de registradores, realizando uma instrução por clock.</p>
+                        </div>
+                        <div class="projects-card-tools">
+                            <p>Ferramentas Utilizadas: JAVA <span>
+                                <img src="assets/icons/java.svg" alt="JAVA">
+                            </span></p>
+                        </div>
                     </div>
 
-                    <div class="projects">
-                        <h1>projetinhoxxx</h1>
-                    </div>
-
-                    <div class="projects">
-                        <h1>projetinhoxxx</h1>
+                    <div class="projects-card">
+                        <header class="projects-card-name">
+                            <h3>SIMULADOR DE MEMÓRIA CACHE</h3>
+                        </header>
+                        <div class="projects-card-description">
+                            <p>Simula a busca em memória cache: ao realizar uma operação de leitura ou escrita, o programa verifica se o endereço referenciado está entre os mais recentemente acessados (memória cache). Caso esteja, o tempo de resposta é para esta instrução é x, mas caso não o encontre, ele busca na memória principal, substituindo o endereço menos acessado na cache pelo endereço trazido da memória principal, fazendo esta instrução ter o tempo de resposta x + y.</p>
+                        </div>
+                        <div class="projects-card-tools">
+                            <p>Ferramentas Utilizadas: C++ <span>
+                                <img src="assets/icons/c++.svg" alt="C++">
+                            </span></p>                           
+                        </div>
                     </div>
 
                 </div>
@@ -273,16 +321,40 @@
             </article>
         </section>
 
-        <section class="contact-page">
+        <section id="contactSection" class="contact-page">
             <article class="contact-container">
-                <div class="section-name">
-
-                </div>
+                <header class="contact-name">
+                    <h2>Entre em Contato</h2>
+                </header>
                 
-                <div class="section info">
+                <div class="contact-info">
 
                     <div class="contact-form">
-                        <h1>aqui sera formulario</h1>
+                        
+                        <form action="#" method="post">
+
+                            <fieldset>
+                                <legend>Mande sua mensagem</legend>
+
+                                <div class="form-name">
+                                    <label for="nameField">Nome</label>
+                                    <input type="text" name="Nome" id="nameField" required>
+                                </div>
+
+                                <div class="form-email">
+                                    <label for="emailField">E-Mail</label>
+                                    <input type="email" name="E-mail" id="emailField" required>
+                                </div>
+
+                                <div class="form-message">
+                                    <label for="messageField">Mensagem</label>
+                                    <textarea name="Mensagem" id="messageField" rows="5" required></textarea>
+                                </div>
+                            </fieldset>
+
+                            <button type="submit">Enviar</button>
+                            
+                        </form>
                     </div>
                     
                 </div>
