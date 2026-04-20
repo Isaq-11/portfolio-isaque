@@ -271,7 +271,7 @@ main{
 
 .skills-page h3{
     margin: 6px 0;
-    
+
     font-size: var(--h3-size);
 
     font-weight: bold;
@@ -286,100 +286,50 @@ main{
 }
 
 
-/* .skills-page{
-    display: flex;
-    justify-content: center;
-    padding: 0 16px;
-
-    background-color: aqua;
+/* CSS DA PAGINA 'PROJETOS' */
+.projects-page{
+    background-color: antiquewhite;
 }
 
-.skills-container{
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 24px;
-
+.projects-info{
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    margin: 24px 0;
+
+    /* gap: 36px; */
 }
 
-.skills-name{
-    margin-right: auto;
+.projects-name{
+    margin: var(--h2-margin-size) 0;
 }
 
-.skills-name h1{
-    margin: 16px 0;
-    font-size: clamp(1rem, 2.5rem, 4rem);
+.projects-page h2{
+    font-size: var(--h2-size);
+
+    font-weight: bold;
+}
+.projects-page h3{
+    margin: 6px 0;
+
+    font-size: var(--h3-size);
+
     font-weight: bold;
 }
 
-.skills-info{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-.skills-info li{
-    list-style: none;
-}
+.projects-page p{
+    padding: 0 12px;
 
-.skills-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    font-size: var(--p-size);
+
+    font-weight: 400;
 }
 
-.skills-card-name{
-    text-align: left;
-}
+.projects-page img{
+    width: var(--icons-size);
+    height: var(--icons-size);
 
-.skills-card-name h1{
-    margin: 12px 0;
-}
-
-.skills-card-content ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 12px;
-    justify-content: space-around;
-}
-
-.skills-card-content li{
-   padding: 8px;
-   width: fit-content;
-   white-space: nowrap;
-}
-
-.skills-card-content li img{
-   height: 30px;
-   width: 30px;
-   width: fit-content;
-   
-} */
-
-
-/* CSS DA PAGINA 'PROJETOS' */
-.projects-page{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    padding: 0 16px;
-}
-
-.projects-container{
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 24px;
-
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-}
-
-.projects.name{
-    margin-right: auto;
+    object-fit: cover;
 }
 
 
