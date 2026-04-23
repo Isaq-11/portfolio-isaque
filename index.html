@@ -13,7 +13,7 @@
                 <div class="navbar-home-link">
                     <ul>
                         <li>
-                            <a href="#homeSection">
+                            <a href="#homeSection" class="nav-link">
                                 <img src="assets/icons/home.svg" alt="Início">
                                 <span>Início</span>
                             </a>
@@ -24,25 +24,25 @@
                 <div class="navbar-links">
                     <ul>
                         <li>
-                            <a href="#aboutSection">
+                            <a href="#aboutSection" class="nav-link">
                                 <img src="assets/icons/user-circle.svg" alt="Sobre">
                                 <span>Sobre</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#skillsSection">
+                            <a href="#skillsSection" class="nav-link">
                                 <img src="assets/icons/bolt.svg" alt="Habilidades">
                                 <span>Habilidades</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#projectsSection">
+                            <a href="#projectsSection" class="nav-link">
                                 <img src="assets/icons/folder.svg" alt="Projetos">
                                 <span>Projetos</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#contactSection">
+                            <a href="#contactSection" class="nav-link">
                                 <img src="assets/icons/envelope.svg" alt="Contato">
                                 <span>Contato</span>
                             </a>
@@ -59,7 +59,7 @@
     </header>
 
     <main>
-        <section id="homeSection" class="home-page">
+        <section id="homeSection" class="home-page observe-section">
             <div class="section-container">
                 <div class="home-info">
                     <div class="home-text">
@@ -78,19 +78,21 @@
                             <img src="assets/images/corinthians wpp.jpg" alt="Foto de perfil">
                         </div>
 
-                        <div class="api-box" id="apiCard">
+                        <div class="api-box" id="apiCard" data-city="Dois Vizinhos">
                             <h2>API</h2>
-                            <p>Essa parte será usada no JavaScript.</p>
                             <p><strong>Status:</strong> <span id="weatherStatus">Ainda não conectado</span></p>
                             <p><strong>Cidade:</strong> <span id="weatherCity">--</span></p>
                             <p><strong>Temperatura:</strong> <span id="weatherTemperature">--</span></p>
+                            <p><strong>Sensação térmica:</strong> <span id="weatherApparentTemperature">--</span></p>
+                            <p><strong>Vento:</strong> <span id="weatherWind">--</span></p>
+                            <button type="button" id="reloadWeatherButton">Atualizar clima</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="aboutSection" class="about-page">
+        <section id="aboutSection" class="about-page observe-section">
             <div class="section-container">
                 <div class="about-info">
                     <h2>Sobre Mim</h2>
@@ -128,7 +130,7 @@
             </div>
         </section>
 
-        <section id="skillsSection" class="skills-page">
+        <section id="skillsSection" class="skills-page observe-section">
             <div class="section-container">
                 <div class="skills-info">
                     <h2>Habilidades</h2>
@@ -174,7 +176,7 @@
             </div>
         </section>
 
-        <section id="projectsSection" class="projects-page">
+        <section id="projectsSection" class="projects-page observe-section">
             <div class="section-container">
                 <div class="projects-info">
                     <h2>Projetos</h2>
@@ -206,7 +208,7 @@
             </div>
         </section>
 
-        <section id="contactSection" class="contact-page">
+        <section id="contactSection" class="contact-page observe-section">
             <div class="section-container">
                 <div class="contact-info">
                     <h2>Entre em Contato</h2>
@@ -222,7 +224,7 @@
                     </div>
 
                     <div class="contact-form">
-                        <form action="#" method="post">
+                        <form action="#" method="post" id="contactForm">
                             <fieldset>
                                 <legend>Mande sua mensagem</legend>
 
@@ -243,6 +245,7 @@
                             </fieldset>
 
                             <button type="submit">Enviar</button>
+                            <p id="formFeedback" class="form-feedback"></p>
                         </form>
                     </div>
                 </div>
@@ -257,7 +260,7 @@
         </div>
     </footer>
 
-    <script type="module">
+    <script type="module" src="js/main.js">
         
     </script>
     
